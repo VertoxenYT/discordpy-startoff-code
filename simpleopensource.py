@@ -64,7 +64,7 @@ async def fun(ctx):
 #The addon onto the help command
 	em=discord.Embed(title="Fun Menu", description=f"This is the fun category!\n\n__**Commands**__\n\n**Ping Command**\n``{command_prefix}ping``\n\n**Avatar Command**\n``{command_prefix}avatar (mention user)``")
 	
-	emb.set_footer(icon_url=f"{ctx.author.avatar_irl}", text=f"Requested by {ctx.author} | {bot_version}")
+	em.set_footer(icon_url=f"{ctx.author.avatar_irl}", text=f"Requested by {ctx.author} | {bot_version}")
 	
 	await ctx.send(embed=em)
 
